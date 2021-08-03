@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container">
+
+        <div class="heading">
+            <h1>Know your current weather</h1>
+        </div>
+        <!-- main weather app container -->
+        <div class="weather-container">
+            <!-- head part of weather app -->
+            <div class="weather-container-head">
+                <div class="current-location">
+                    <h2 class="current-location-place"></h2>
+                    <span class="current-location-state"></span>
+                    <span class="current-location-country"></span>
+                </div>
+                <div class="icon-container">
+                    <div class="icon">
+                        <canvas id="icon" width="160" height="122"></canvas>
+                    </div>
+                    <div class="icon-info">
+                        Rainy
+                    </div>
+                </div>
+            </div>
+            <!-- body part of weather app  -->
+            <div class="weather-container-mid">
+                <div class="temperature">
+                    <h1 class="temperature-value"> </h1> <span class="C-F">°C</span>
+                    <span class="updated-time">last updated : <span class="updated-time-value">11:30:40</span></span>
+                </div>
+                <div class="weather-details">
+                    <div class="details">
+                        <span>Precipitation(mm) : </span>
+                        <div class="rain-details">435</div>
+                    </div>
+                    <div class="details">
+                        <span>Humidity : </span>
+                        <div class="humidity-details">453</div>
+                    </div>
+                    <div class="details">
+                        <span>Wind direction : </span>
+                        <div class="wind-details">N</div>
+                    </div>
+                    <div class="details">
+                        <span>Pressur(mb) : </span>
+                        <div class="pressure-details">55</div>
+                    </div>
+                    <div class="details">
+                        <span>Complement : </span>
+                        <div class="complement-details">Dont forget to take umbrella if going out</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <h4>
+                All Copyrights Reserved | Himadri Chakraborty 2021
+            </h4>
+        </div>
+    </section>
+
+
+    <script src="app.js"></script>
+    <script src="skycons.js"></script>
+</body>
+
+</html>
